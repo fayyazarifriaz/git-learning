@@ -1,0 +1,435 @@
+.red-color {
+    color: #B1162C;
+}
+
+.blue-color {
+    color: #003140;
+}
+
+.site-header {
+    padding: 1.563vw 0;
+}
+
+.nunito {
+    font-family: Nunito;
+}
+
+.site-logo {
+    max-width: 13.750vw;
+}
+
+.home-free-image {
+    max-width: 16.302vw;
+}
+
+.hdr-itlc-txt {
+    font-size: 1.042vw;
+    font-weight: 900;
+    font-style: italic;
+    color: #003140;
+}
+
+.site-address-cont ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.site-address-cont ul li {
+    color: #333333;
+    font-family: 'Nunito';
+    font-size: 14px;
+}
+
+.site-address-title {
+    color: #B1162C;
+    font-weight: 900;
+}
+
+.site-address-rs {
+    margin-left: 2.083vw;
+}
+
+.main-bg {
+    padding-top: 60px;
+}
+body {
+    background-color: #fbfbfb;
+}
+
+p {
+    color: #333333;
+    font-weight: 400;
+    font-size: 0.833vw;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav.navbar {
+    background: #ffffff;
+    box-shadow: 0px 20px 20px 0px rgb(0 0 0 / 3%);
+}
+
+/* Functional CSS Start */
+h4.functional-panel-title {
+    font-size: 1.250vw;
+}
+
+.admin-console {
+    font-weight: 900;
+    text-decoration: none;
+    border-bottom: 2px solid #B1162C;
+    font-size: 14px;
+}
+.get-email-pdf-btn {
+    border: none;
+    padding: 5px 10px;
+    background-color: #003140;
+    color: #ffffff;
+    font-size: 10px;
+    font-family: 'Nunito';
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.admin-console:hover {
+    color: #003140;
+}
+
+
+/* Colapse tabs CSS Start */
+.colapse-sec {
+    margin-top: 50px;
+}
+
+.colapse-sec>.accordion {
+    max-width: 1045px;
+    margin: 0 auto 1.875vw auto;
+}
+
+.category-btn {
+    color: #B1162C;
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 1.042vw;
+    padding: 1.042vw 1.823vw;
+    align-items: center;
+
+}
+
+.category-icon {
+    width: 1.823vw;
+    margin-right: 0.885vw;
+}
+
+
+.main-accordian-style {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 4%);
+    margin-bottom: 2.083vw;
+}
+
+.category-btn.accordion-button:not(.collapsed) {
+    background-color: #B1162C;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #ffffff;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) img.category-icon {
+    filter: invert(99%) sepia(8%) saturate(2%) hue-rotate(297deg) brightness(115%) contrast(100%);
+}
+
+.accordion .accordion-button::after {
+    background-image: url("https://i.ibb.co/sgPQb3m/11.png");
+}
+
+.accordion .accordion-button:not(.collapsed)::after {
+    background-image: url("https://i.ibb.co/MDwPZwk/set-white.png");
+}
+
+.main-accordian-style>.accordion-collapse>.accordion-body {
+    padding: 1.042vw 1.823vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Year Select Accordian CSS Start */
+.accor-year-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.accor-year-select>.accordion-item {
+    width: 31%;
+}
+
+.accor-year-select button.accordion-button {
+    color: #ffffff;
+    background-color: #003140;
+    font-family: 'Nunito';
+    font-size: 0.833vw;
+    font-weight: 700;
+    padding: 10px 15px;
+    border-radius: 0px !important;
+    line-height: 0;
+}
+
+
+/* Year Select CSS Start */
+.accordian-body-year-select ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.accordian-body-year-select ul a {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Nunito';
+}
+
+.accordian-body-year-select ul a:hover {
+    color: #B1162C;
+}
+
+.accordian-body-year-select {
+    padding: 1.563vw 2.083vw 0.5vw 2.083vw;
+}
+
+.accordian-body-year-select ul li {
+    margin-right: 14.6%;
+    margin-bottom: 20px;
+}
+
+.accordian-body-year-select ul li:nth-child(4n) {
+    margin-right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Select Service Page CSS Start */
+
+
+
+        /* Functional Right Side CSS Start*/
+        .functional-panel-rs {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+        }
+
+        .presentation-format-cont {
+            margin-top: 12px;
+            min-width: 200px;
+        }
+
+        .present-format-label-cont {
+            background-color: #B1162C;
+            border: 1px solid #0000003B;
+            padding: 7px 10px;
+        }
+
+        .present-format-label-cont p {
+            color: #ffffff;
+            font-size: 12px;
+            font-family: 'Nunito';
+            font-weight: 400;
+        }
+
+        .presentation-format-select {
+            border: 1px solid #0000003B;
+            border-radius: 0px;
+            color: #333333;
+            font-size: 12px;
+            font-weight: 400;
+            padding: 9px 10px;
+        }
+
+        .form-select:focus {
+            border-color: #B1162C;
+            outline: 0;
+            box-shadow: none;
+        }
+
+        /* Functional Right Side CSS Start*/
+
+
+
+        /* Select Mileage Section CSS Start */
+
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+
+        .select-mileage-sec {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 50px;
+            margin-bottom: 150px;
+        }
+
+        .select-mileage-sec ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .select-mileage-sec ul li {
+            text-align: center;
+            border: 1px solid #00000024;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 4%);
+            margin-bottom: 22px;
+        }
+
+        .select-mileage-btn {
+            font-size: 0.833vw;
+            font-family: 'Nunito';
+            font-weight: 700;
+            color: #B1162C;
+            padding: 0.938vw;
+            display: block;
+        }
+
+        .select-mileage-sec .col {
+            max-width: 400px;
+        }
+
+        .select-mileage-sec ul li:hover {
+            background: #B1162C;
+        }
+
+        .select-mileage-sec ul li:hover a {
+            color: #ffffff;
+        }
+
+        /* Select Mileage Section CSS End */
+
+
+        /* BreadCrumb CSS Start */
+        .breadCrumb-nav {
+            margin-bottom: 2.344vw;
+        }
+
+        li.breadcrumb-item {
+            background: #B1162C;
+            position: relative;
+        }
+
+        li.breadcrumb-item a,
+        .breadcrumb-item.active {
+            color: #ffffff;
+            font-family: 'Nunito';
+            font-weight: 700;
+            font-size: 12px;
+        }
+
+        li.breadcrumb-item.active {
+            background-color: #003140;
+        }
+
+        .breadcrumb-home svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .breadcrumb-item+.breadcrumb-item::before {
+            background-size: contain;
+            height: 40px;
+            width: 30px;
+            position: absolute;
+            background-repeat: no-repeat;
+            padding: 0 0 0 0;
+            top: 0;
+            left: -25px;
+            content: "";
+        }
+
+        li.breadcrumb-item::after {
+            background-size: contain;
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            background-repeat: no-repeat;
+            padding: 0 0 0 0;
+            top: 0;
+            right: -25px;
+            content: "";
+        }
+
+        li.breadcrumb-item::before {
+            background-image: url("https://i.ibb.co/M1Qqp37/Layer-3.png");
+        }
+
+        li.breadcrumb-item.active::before {
+            background-image: url("https://i.ibb.co/6Y7BG0K/Layer-3-blue.png");
+        }
+
+        li.breadcrumb-item::after {
+            background-image: url("https://i.ibb.co/xf2QrGc/Layer-2.png");
+        }
+
+        li.breadcrumb-item.active::after {
+            background-image: url("https://i.ibb.co/n1rGcmX/Layer-2-blue.png");
+        }
+
+
+        li.breadcrumb-item a,
+        li.breadcrumb-item.active a {
+            padding: 10px 20px 10px 10px;
+        }
+
+        li.breadcrumb-item,
+        li.breadcrumb-item.active {
+            margin-right: 32px;
+            display: flex;
+            align-items: center;
+            height: 40px;
+        }
+
+        li.breadcrumb-home a {
+            padding: 10px 15px 10px 15px;
+        }
+
+          /* BreadCrumb CSS End */
+
+/* Select Service Page CSS End */

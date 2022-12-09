@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<!------------------------------------------------------------------------------------- CSS NOT TO ADD ------------------------------------------------------------------>
+<style>
+::selection {
+  color: white;
+  background: #b1162c;
+}
+    /* Input CSS Start */
+    .service-input-fields-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:36px;    
+}
+
+.service-input-fields-cont {
+    width: 100%;
+    max-width: 290px;
+}
+
+.service-input-fields-cont label.form-label {
+    background-color: #B1162C;
+    border: 1px solid #0000003B;
+    display: block;
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 10px;
+    font-weight: 700;
+    font-family: 'Nunito';
+}
+
+.service-input-fields-cont input, .service-input-fields-cont select {
+    padding: 10px;
+    border-radius: 0px;
+    background: #fff;
+}
+
+.service-input-fields-cont input::placeholder {
+    color: #A6A6A6;
+}
+.service-input-fields-cont input::placeholder, .service-input-fields-cont select{
+    font-size:14px;
+    font-weight:400;
+    font-family: 'Nunito';
+}
+
+.service-input-fields-cont select{
+    color: #333333;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #b1162c;
+}
+/* Input CSS End */
+
+
+
+/* content CSS Start */
+
+/* Title CSS */
+.inner-title {
+    color: #B1162C;
+    font-family: 'Nunito';
+    font-size: 1.250vw;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+h6.inner-sub-title-blue {
+    font-size: 18px;
+    font-family: 'Nunito';
+    font-weight: 700;
+    color: #003140;
+    margin-bottom: 15px;
+}
+
+.cont-wrapper-ls, .cont-wrapper-rs {
+    width: 48%;
+}
+
+.cont-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 45px;
+    margin-bottom: 150px;
+}
+
+
+/* Input CheckBox CSS Start */
+.form-check-input:checked {
+    background-color: #B1162C;
+    border-color: #B1162C;
+}
+
+.form-check-input:focus {
+    border-color:  #b1162d9c;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #b1162c4d;
+}
+
+.form-check label {
+    color: #333333;
+    font-family: 'Nunito';
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.form-check {margin-bottom: 5px;}
+/* Input CheckBox CSS End */
+
+
+
+/* Min Serveice Total CSS Start */
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 10px 10px 0;
+    border-top: 2px dashed #333;
+    border-bottom: 2px dashed #333;
+    margin: 40px 0;
+}
+
+p.total-price-txt, p.total-price-price {
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 18px;
+}
+/* Min Serveice Total CSS End */
+
+
+/* OpCodes CSS Start */
+ul.opcodes-ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.opcodes-ul li {
+    background: #003140;
+    color: #ffffff;
+    font-family: 'Nunito';
+    font-size: 16px;
+    font-weight: 600;
+    padding: 4px 8px;
+    margin-right: 10px;
+}
+/* OpCodes CSS end */
+
+
+/* preferred total price CSS Start */
+.preferred-total-sec {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.preferred-total-cont {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.042vw 1.302vw;
+    border: 4px dashed #B1162C;
+}
+
+p.preferred-total-txt, p.preferred-total-price {
+    color: #B1162C;
+    font-size: 1.354vw;
+    font-weight: 900;
+    font-family: 'Nunito';
+}
+
+.preferred-total-Terms p {
+    color: #333333;
+    font-size: 12px;
+    font-family: 'Nunito';
+    font-weight: 400;
+}
+
+.preferred-total-Terms {
+    max-width: 28.438vw;
+    margin: 10px auto 0 auto;
+}
+/* preferred total price CSS End */
+
+
+
+/* Other CSS Start */
+.info-text-sec p.txt {
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+.red-btn, .red-stroke-btn {
+    border-radius: 0;
+    font-family: 'Nunito';
+    font-weight: 900;
+    font-size: 0.833vw;
+    padding: 10px 20px;
+}
+
+.red-btn, .cls-btn-cont .red-btn:hover {
+    background-color: #B1162C;
+    color: #ffffff;
+}
+
+.red-stroke-btn, .cls-btn-cont .red-stroke-btn:hover {
+    border: 2px solid #B1162C;
+    color: #B1162C;
+}
+
+
+.cls-btn-cont {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.cls-btn-cont .btn.red-btn {
+    margin-right: 2.344vw;
+}
+
+
+/* Signature CSS Start */
+
+.signature-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signature-line {
+    border-bottom: 2px solid #333333;
+    max-width: 300px;
+    height: 150px;
+    width: 15.625vw;
+}
+
+.signature-text p {
+    color: #333333;
+    font-size: 14px;
+    font-family: 'Nunito';
+    font-weight: 600;
+}
+
+.signature-text {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.signature .signature-btn, .signature .signature-btn:hover {
+    background: #333333;
+    color: #ffffff;
+    border-radius: 0;
+    font-size: 24px;
+    font-family: 'Nunito';
+    font-weight: 900;
+    padding: 8px 32px;
+    margin-top: 50px;
+}
+
+
+
+
+/* Signature CSS End */
+
+
+
+.show-img-hover-sec {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 800px;
+}
+
+.show-img-hover-cont {
+    padding: 6px;
+    background: #ffffff;
+    box-shadow: 0 3px 26px 5px rgb(0 0 0 / 26%);
+}
+.form-check label:hover {
+    color: #b1162c;
+}
+
+</style>
+
+<!------------------------------------------------------------------------------------- CSS NOT TO ADD ------------------------------------------------------------------>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- THIS CSS WILL BE ADD -->
+<style>
+    .main-bg {
+        margin-bottom: 150px;
+    }
+
+    .service-explain-sec {
+        margin-top: 35px;
+    }
+
+    .service-explain-cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .service-explain-rs {
+        width: 100%;
+    }
+
+
+    .service-explain-ls ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .service-explain-ls ul li {
+        margin-bottom: 15px;
+    }
+
+    .service-exp-btn {
+        background-color: #B1162C;
+        color: #ffffff;
+        border-radius: 0;
+        font-size: 14px;
+        font-family: 'Nunito';
+        font-weight: 700;
+        border: none;
+        padding: 0.625vw 0.781vw;
+        text-align: left;
+        width: 100%;
+        border: 1px solid #0000003B;
+    }
+
+    .service-explain-ls .service-exp-btn.active,
+    .service-explain-ls .service-exp-btn:hover {
+        background-color: #003140;
+        color: #ffffff;
+    }
+
+    .service-explain-ls {
+        max-width: 320px;
+        margin-right: 2.344vw;
+    }
+
+    img.service-exp-img {
+        width: 100%;
+    }
+
+    .tabcontent {
+        display: none;
+    }
+</style>
+</head>
+
+<body>
+
+    <!-- Site Header -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container site-header">
+            <img src="https://i.ibb.co/C0HsT8b/logo-1.png" class="float-start site-logo" alt="...">
+            <div class="d-flex flex-column  justify-content-center">
+                <p class="m-0 nunito hdr-itlc-txt">HOME OF FREE WARRANTY FOR LIFE</p>
+                <img src="https://i.ibb.co/1zGw4ws/youngblood-underline.png" class="home-free-image" alt="">
+            </div>
+            <div class="site-address-cont d-flex">
+                <div class="site-address-ls">
+                    <ul>
+                        <li><span class="site-address-title">Sales and Service Center:</span></li>
+                        <li>836 North Glenstone Ave<br>Springfield Missouri</li>
+                        <li><span class="site-address-title">Sales:</span> 417-862-4343</li>
+                    </ul>
+                </div>
+                <div class="site-address-rs">
+                    <ul>
+                        <li><span class="site-address-title">Sales South:</span></li>
+                        <li>2727 South Campbell<br>Springfield Missouri</li>
+                        <li><span class="site-address-title">Sales:</span> 417-882-6800</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Site Body -->
+    <div class="main-bg">
+        <div class="container p-0">
+            <!-- Global breadcrumb html -->
+            <div class="breadCrumb-nav">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item breadcrumb-home">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-house-door-fill" style="" viewBox="0 0 16 16">
+                                    <path
+                                        d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item" aria-current="page">
+                            <a href="#">
+                                Motorized Diesel Class A 2022
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <a href="#">
+                                06 months
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+            <!-- SELECT RIGHT SIDE  -->
+            <div class="functional-panel d-flex justify-content-between align-items-start">
+                <div class="functional-panel-ls">
+                    <h4 class="functional-panel-title fw-bolder nunito red-color">Guiding Videos</h4>
+                    <p class="functional-panel-para">Videos for user guidance, it helps the user to understand the features of the tool</p>
+                </div>
+                <div class="functional-panel-rs">
+                    <div>
+                        <a class="admin-console red-color nunito" href="#" role="button">Admin Console</a>
+                        <button type="button" class="get-email-pdf-btn">Get/Email PDF</button>
+                    </div>
+                    <div class="presentation-format-cont">
+                        <div class="present-format-label-cont">
+                            <p>Presentation Format</p>
+                        </div>
+                        <select class="form-select presentation-format-select" aria-label="Default select example">
+                            <option value="1">Service Menu Total</option>
+                            <option value="2">Service Menu Packages</option>
+                            <option value="3">Service/Interval Matrix</option>
+                            <option value="4">Services Explained</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+                                <!-- DEVELOPER HAVE TO PICK CODE FROM HERE -->
+                                <div class="service-explain-sec">
+                                    <div class="service-explain-cont">
+                                        <div class="service-explain-ls">
+                                            <ul>
+                                                <li><button class="btn service-exp-btn tablinks active"
+                                                        onclick="tabOpenFunction(event, 'tabOne')">Overview</button></li>
+                                                <li><button class="btn service-exp-btn tablinks" onclick="tabOpenFunction(event, 'tabTwo')">Inspect Roof
+                                                        for Damage and Sealants (No Charge)</button></li>
+                                                <li><button class="btn service-exp-btn tablinks" onclick="tabOpenFunction(event, 'tabThree')">Perform LP
+                                                        Pressure/Leak Test Set Regulator if needed</button></li>
+                                            </ul>
+                                        </div>
+                                        <div class="service-explain-rs">
+                                            <div class="service-explain-rs-cont">
+                                                <div class="service-explain-rs-data">
+                                                    <div id="tabOne" class="tabcontent" style="display:block;">
+                                                        <div class="ratio ratio-16x9">
+                                                            <iframe width="900" height="506" src="https://www.youtube.com/embed/ypcpFtagQYQ"
+                                                                title="10 Most Luxurious RVs In The World" frameborder="0"
+                                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                                allowfullscreen></iframe>
+                                                        </div>
+                                                    </div>
+                                                    <div id="tabTwo" class="tabcontent">
+                                                        <img class="service-exp-img" src="https://i.ibb.co/rfJZJnp/1.webp" alt="text-of-img">
+                                                    </div>
+                                                    <div id="tabThree" class="tabcontent">
+                                                        <img class="service-exp-img" src="https://i.ibb.co/593gW0Z/rv-residential-fridge.jpg"
+                                                            alt="text-of-img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- DEVELOPER HAVE TO PICK CODE TO HERE -->
+</div>
+
+
+    <script>
+        function tabOpenFunction(evt, tabName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(tabName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
+
+
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
